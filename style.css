@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.about-us-img-container {
+    height:100%;
+}
+
+.about-us-img {
+    height:100%;
+}
+.whyieee{
+    padding: 50px;
+    background-image:url(stars.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cards{
+    width:50px;
+    height:400px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(50, 49, 49);
+    box-shadow: 0px 0px 20px rgb(100, 100, 100);
+    border-radius: 10px;
+    margin: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+.cards h3{
+    display: none;
+}
+.cards h5{
+    display: none;
+}
+.cards span{
+ color: aqua;
+ text-shadow:0px 0px 20px aqua ;
+ font-size: 20px;
+}
+.cards:hover{
+    width:600px;
+    background: transparent;
+    padding: 10px;
+    
+}
+.cards:hover span{
+    display: none;
+}
+.cards:hover h3{
+    display: block;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+   font-size: 40px;
+   animation: timedelay 0.8s;
+}
+
+@keyframes timedelay {
+    0% {
+        opacity:0;
+        
+    }  
+    50%{
+        opacity:0;
+        
+    } 
+    60%{
+        opacity:0.2;
+    }
+    65%{
+        opacity:00.3;
+    }
+    75%{
+        opacity:0.5;
+    }
+    90%{
+        opacity:0.7;
+    }
+    100%{
+        opacity:1;
+        
+    }
+}
+.cards:hover h5{
+    display: block;
+    color: rgb(194, 192, 192);
+    animation: timedelay 1s;
+}
+.quotes{
+    background-color: rgb(51, 50, 50);
+
+}
+.quotestext{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background:transparent;
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 15px;
+}
